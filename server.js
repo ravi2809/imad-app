@@ -5,13 +5,34 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
+var articles = {
+    
+articleOne :{
     title: 'article one',
     heading: 'article one have fun',
     content: `
             <p>
-                This is article one content.want to know more?
+                This is article one content.want to know more? check out other uRLs
             </p>`
+},
+
+articleTwo :{
+    title: 'article two',
+    heading: 'article two have fun',
+    content: `
+            <p>
+                This is article two content.want to know more?
+            </p>`
+},
+
+articleThree : {
+    title: 'article three',
+    heading: 'article three have fun',
+    content: `
+            <p>
+                This is article three content.want to know more?
+            </p>`
+}
 };
 
 function createTemplate(data)
